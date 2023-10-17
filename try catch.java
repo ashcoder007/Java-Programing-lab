@@ -1,0 +1,12 @@
+ public class Main{
+    public static void main(String[] args){
+    try{
+        int d=5/0;
+      
+        System.out.println("rest of code in try block" );
+    }
+    catch (ArithmeticException err){
+        System.out.println("ArithmeticException=>"+err.getMessage());
+    }
+    }
+}
