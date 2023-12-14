@@ -1,22 +1,26 @@
-class Data 
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main extends Thread
 {
-    private String name;
-    public void setter(String s)
+    public void run()
     {
-        name=s;
+        System.out.println("welcome to csit");
     }
-    public void getter()
-    {
-    System.out.println(name);
-    System.out.println("java");
-    }
-}
-public class Main
-{
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-	Data d= new Data();
-	d.setter("programiz");
-	d.getter();
+	    Main t1 = new Main();
+	    Main t2 = new Main();
+	    Main t3 = new Main();
+	    t1.start();
+	    t2.start();
+	    t3.start();
+	    
+	
 	}
 }
